@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faiz Web Portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header>
+        <a href="/">M. Abdurrahman Faiz</a>
+        <nav>
+            <a target="_blank" href="https://github.com/t0ccata"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/mabdfaiz/"><i class="fa-brands fa-linkedin"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Halo! I'm Faiz ...</h1>
+                <p>Software Developer</p>
+            </div>
+            <h5 class="intro-description">
+                ...
+            </h5>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a target="_blank" href="mailto:mabdfaiz@gmail.com">
+                    Email me
+                </a>
+                <a target="_blank" href="https://github.com/t0ccata">Github</a>
+                <a target="_blank" href="https://www.linkedin.com/in/mabdfaiz/">Linkedin</a>
+            </div>
+
+            <div id="play-game">
+                <button onclick="playGame()">Play it ?!</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Great now you make it worse</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                <button style="display: none;" onclick="resetColor()">Reset</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Javascript</td>
+                        <td>NodeJS | ReactJS | VueJS</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Data Analysis | Data Visualization | VMTK</td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>TailwindCSS | FantaCSS | GIT | Docker | MySQL</td>
+                    </tr>
+                    <tr>
+                        <td>AI</td>
+                        <td>MONAI</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Latest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>November 2026</p>
+                        <h4>Text OCR Mobile App</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Kotlin</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Android Studio</p>
+                            </div>
+                        </div>
+                        <p>A lightweight and fast Android application built with Google ML Kit and Kotlin that allows users to open the app, capture an image directly using the camera, and instantly extract text from it.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/t0ccata/OCRText">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="\public\WhatsApp Image 2026-11-05 at 08.32.24.jpeg" alt="ocrtextscreenshot">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>November 2026</p>
+                        <h4>Text OCR Mobile App</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Kotlin</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Android Studio</p>
+                            </div>
+                        </div>
+                        <p>A lightweight and fast Android application built with Google ML Kit and Kotlin that allows users to open the app, capture an image directly using the camera, and instantly extract text from it.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/t0ccata/OCRText">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="\public\WhatsApp Image 2026-11-05 at 08.32.24.jpeg" alt="ocrtextscreenshot">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>November 2026</p>
+                        <h4>Text OCR Mobile App</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Kotlin</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Android Studio</p>
+                            </div>
+                        </div>
+                        <p>A lightweight and fast Android application built with Google ML Kit and Kotlin that allows users to open the app, capture an image directly using the camera, and instantly extract text from it.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/t0ccata/OCRText">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="\public\WhatsApp Image 2026-11-05 at 08.32.24.jpeg" alt="ocrtextscreenshot">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a href="https://www.t0ccata.com">t0ccata</a> Repo on <a target="_blank" href="">Github</a></p>
+    </footer>
+
+    <script>
+        // color switch
+
+        // select all element
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetButton = document.querySelector('.color-div button')
+        const playButton = document.getElementById('play-game')
+        // create function
+        function playGame() {
+            colorDiv.style.display = 'block'
+            playButton.style.display = 'none'
+        }
+
+        function changeColor(){
+            const selectedColor = colorInput.value
+            body.style.background = selectedColor
+            resetButton.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.display = 'none'
+        }
+
+        function resetColor(){
+            body.style.background = 'white'
+            hiddenText.style.display = 'none'
+            resetButton.style.display = 'none'
+            colorDiv.style.display = 'none'
+            colorInput.style.display = 'none'
+            playButton.style.display = 'block'
+        }
+        // assign functions to button
+    </script>
+    
+</body>
+</html>
