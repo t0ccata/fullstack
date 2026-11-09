@@ -1,15 +1,19 @@
 import React from "react"
+import Modal from "./Modal"
 
 export default function WorkoutCard(props) {
 
     const { trainingPlan, workoutIndex, type, dayNum, icon } = props
 
     const { warmup, workout } = trainingPlan || {}  //check if the training paln is empty
+    const showExerciseDescription = {name: 'asadwdwa', description: 'asadwdwa'}
+
 
     return (
         <div className="workout-container">
+            {/* <Modal showExerciseDescription={showExerciseDescription} handleCloseModal={() => {}}/> */}
             <div className="workout-card card">
-                <div className="pan-card-header">
+                <div className="plan-card-header">
                     <p>Day {dayNum}</p>
                     {icon}
                 </div>
@@ -18,8 +22,8 @@ export default function WorkoutCard(props) {
                 </div>
             </div>
 
-            <div className="workou-grid">
-                <div className="excercise-name">
+            <div className="workout-grid">
+                <div className="exercise-name">
                     <h4>Warmup</h4>
                 </div>
                 <h6>Sets</h6>
@@ -36,14 +40,14 @@ export default function WorkoutCard(props) {
                             </div>
                             <p className="exercise-info">{warmupExercise.sets}</p>
                             <p className="exercise-info">{warmupExercise.reps}</p>
-                            <input className="weight-input" placeholder="N/A" disabled={false} />
+                            <input className="weight-input" placeholder="N/A" disabled={true} />
                         </React.Fragment>
                     )
                 })}
             </div>
 
-            <div className="workou-grid">
-                <div className="excercise-name">
+            <div className="workout-grid">
+                <div className="exercise-name">
                     <h4>Workout</h4>
                 </div>
                 <h6>Sets</h6>
@@ -65,7 +69,7 @@ export default function WorkoutCard(props) {
                     )
                 })}
             </div>
-                <div className="workout-button">
+                <div className="workout-buttons">
                     <button>Save & Exit</button>
                     <button disabled={true}>Complete</button>
                 </div>

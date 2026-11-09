@@ -11,7 +11,7 @@ export default function Hero() {
             <p>To complete this program you <b>MUST</b> follow these 3 simple rules</p>
             <ul className="rules-list">
                 <div className="rule-item">
-                  div  <p><b>Rest</b></p>
+                    <p><b>Rest</b></p>
                     <p>Ensure thet you are taking rest days where necessary</p>
                 </div>
                 <div className="rule-item">

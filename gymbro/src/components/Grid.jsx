@@ -3,10 +3,10 @@ import WorkoutCard from './WorkoutCard.jsx'
 
 export default function Grid() {
     const isLocked = false
-    const selectedWorkout = 4
+    const selectedWorkout = 5
     
     return (
-        <div className="training-grid-plan">
+        <div className="training-plan-grid">
             { Object.keys(training_plan).map((workout, workoutIndex) => {
                 const type = workoutIndex % 3 === 0 ? 'Push' : workoutIndex % 3 === 1 ? 'Pull' : 'Legs'
 
@@ -30,13 +30,14 @@ export default function Grid() {
                 }
 
                 return (
-                    <button className={'card plan_card ' + (isLocked ? 'inactive' : '')} key={workoutIndex}>
+                    <button className={'card plan-card ' + (isLocked ? 'inactive' : '')} key={workoutIndex}>
                         <div className='plan-card-header'>
                             <p>Day {dayNum}</p>
+                            {isLocked ? (
+                                <i className='fa-solid fa-lock'></i>
+                            ) : (icon)}
                         </div>
-                        {isLocked ? (
-                            <i className='fa-solid fa-lock'></i>
-                        ) : (icon)}
+
                         <div className='plan-card-header'>
                             <h4><b>{type}</b></h4>
                         </div>
